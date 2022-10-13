@@ -23,7 +23,7 @@ const serverlessConfiguration: AWS = {
       TOKEN_ISSUER:process.env.TOKEN_ISSUER
     },
     iam: {
-      role:'arn:aws:iam::610289321240:role/Auth0Integration'
+      role: process.env.IAM_ROLE
     }
   },
   // useDotenv:true, // not working. probably only for serverless-offline
